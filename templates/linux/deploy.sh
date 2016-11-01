@@ -7,6 +7,7 @@ gyp_rebuild_inside_node_modules () {
 
     isBinaryModule="no"
     # recursively rebuild npm modules inside node_modules
+    echo "recursively rebuild npm modules inside node_modules"
     check_for_binary_modules () {
       if [ -f binding.gyp ]; then
         isBinaryModule="yes"
@@ -73,6 +74,7 @@ revert_app (){
 
 
 # logic
+echo "logic"
 set -e
 
 TMP_DIR=/opt/<%= appName %>/tmp
@@ -85,6 +87,7 @@ sudo chmod -R +x *
 sudo chown -R ${USER} ${BUNDLE_DIR}
 
 # rebuilding fibers
+echo "rebuilding fibers"
 cd ${BUNDLE_DIR}/programs/server
 
 if [ -d ./npm ]; then
@@ -111,11 +114,13 @@ fi
 cd /opt/<%= appName %>/
 
 # remove old app, if it exists
+echo "remove old app, if it exists"
 if [ -d old_app ]; then
   sudo rm -rf old_app
 fi
 
 ## backup current version
+echo "backup current version"
 if [[ -d app ]]; then
   sudo mv app old_app
 fi
