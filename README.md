@@ -58,9 +58,9 @@ You can use install and use Meteor Up from Linux, Mac and Windows.
 * Pre-Installed PhantomJS (Optional)
 
 ### Installation
-    npm install cnpm@3.x -g --registry=https://registry.npm.taobao.org
+    npm install cnpm@3.x -g --registry=https://registry.npm.taobao.org -g
 
-    npm install https://github.com/zuizuihao/meteor-up.git
+    npm install https://github.com/zuizuihao/meteor-up.git -g
 
 ### Creating a Meteor Up Project
 
