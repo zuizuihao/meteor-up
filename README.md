@@ -60,7 +60,7 @@ You can use install and use Meteor Up from Linux, Mac and Windows.
 ### Installation
     npm install cnpm@3.x -g --registry=https://registry.npm.taobao.org
 
-    npm install -g mup
+    npm install https://github.com/zuizuihao/meteor-up.git
 
 ### Creating a Meteor Up Project
 
